@@ -1,63 +1,42 @@
-# Automated Conveyor Control System – Siemens S7-1200 PLC
+# 🏭 S7-1200 Conveyor Control
 
-An academic project focused on industrial automation and programmable logic controller (PLC) programming, developed as part of the **PLC Systems in Mechatronics** course at the Faculty of Electrical Engineering and Information Technology, Slovak University of Technology in Bratislava (FEI STU).
+**Riadenie dopravníka programovateľným automatom Siemens S7-1200, projekt z kurzu PLC v mechatronike.**
 
-## Project Overview
+![Rok](https://img.shields.io/badge/rok-2018-blue) ![PLC](https://img.shields.io/badge/Siemens-S7--1200-009999) ![IDE](https://img.shields.io/badge/TIA%20Portal-V13-orange) ![Typ](https://img.shields.io/badge/typ-školský%20projekt-lightgrey)
 
-This project demonstrates the implementation of a conveyor control system using a Siemens SIMATIC S7-1200 programmable logic controller.
+> **Rok realizácie:** 2018 · **Tagy:** `plc` `siemens` `s7-1200` `tia-portal` `industrial-automation` `conveyor` `mechatronics` `ladder-logic` `fei-stu`
 
-The PLC program was developed in Siemens TIA Portal as part of university coursework in 2018, focusing on practical applications of industrial automation and PLC-based control systems.
+## O projekte
 
-## Technical Information
+Školský projekt z predmetu **PLC systémy v mechatronike** na FEI STU v Bratislave. Ukazuje, ako sa riadi dopravníkový systém pomocou PLC Siemens SIMATIC S7-1200: od hardvérovej konfigurácie až po logiku programu v prostredí **TIA Portal V13**.
 
-| Parameter | Description |
+| Parameter | Hodnota |
 |---|---|
-| Project | Automated Conveyor Control System |
-| Controller | Siemens SIMATIC S7-1200 |
-| Programming environment | Siemens TIA Portal V13 |
-| Application | Conveyor system control |
-| Project type | Academic / Educational |
-| Institution | FEI STU – Slovak University of Technology |
-| Course | PLC Systems in Mechatronics |
-| Year | 2018 |
-| Author | Vratislav Režo |
+| Riadiaci systém | Siemens SIMATIC S7-1200 |
+| Vývojové prostredie | TIA Portal V13 |
+| Aplikácia | automatizované riadenie dopravníka |
+| Inštitúcia | FEI STU Bratislava |
+| Rok | 2018 |
 
-## Technologies
+## Obsah repozitára
 
-- Siemens SIMATIC S7-1200
-- Siemens TIA Portal V13
-- Programmable Logic Controllers (PLC)
-- Industrial automation
-- Mechatronic systems
+```
+Dopravnik/
+├── Dopravnik.ap13      ← hlavný projektový súbor TIA Portalu
+├── AdditionalFiles/    ← archív PLCM
+└── System/             ← systémové dáta projektu
+```
 
-## Academic Context
+## Ako projekt otvoriť
 
-The project was developed within the university course **PLC Systems in Mechatronics** at FEI STU in Bratislava.
+1. Nainštalujte **Siemens TIA Portal V13** (alebo novší, ktorý vie projekt migrovať).
+2. Otvorte `Dopravnik/Dopravnik.ap13`.
+3. Program si môžete prezrieť, simulovať (PLCSIM) alebo nahrať do S7-1200.
 
-The course focuses on the application of programmable logic controllers in mechatronic systems, including industrial control principles, automation and practical PLC programming.
+## Poznámka
 
-## Project Files
+Pri otváraní v novšej verzii TIA Portalu treba počítať s migráciou projektu. Staršie anglické README je v [docs/README.en.md](docs/README.en.md).
 
-The repository contains the original Siemens TIA Portal project files.
+## Autor
 
-## How to Open the Project
-
-1. Install Siemens TIA Portal V13.
-2. Clone or download this repository.
-3. Locate the original TIA Portal project file.
-4. Open the project in TIA Portal.
-5. Review the PLC hardware configuration and program blocks.
-
-**Note:** Compatibility with newer TIA Portal versions may require project migration.
-
-## Historical Note
-
-This repository preserves an academic engineering project from 2018, documenting an early practical experience with Siemens PLC programming and industrial automation during university studies.
-
----
-
-**Author:** Vratislav Režo  
-**Institution:** Faculty of Electrical Engineering and Information Technology, Slovak University of Technology in Bratislava (FEI STU)  
-**Year:** 2018
-
-**Repository:** [VRDragon/PLC-M](https://github.com/VRDragon/PLC-M)
+**Vratislav Režo** ([@VRDragon](https://github.com/VRDragon))
